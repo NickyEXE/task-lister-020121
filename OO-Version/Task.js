@@ -42,19 +42,19 @@ class Task {
   static handleSort = () => {
     switch (sortForm.value){
       case 'lowest':
-        this.all = this.sortLowestToHighest();
+        this.sortLowestToHighest();
         break;
       case 'highest':
-        this.all = this.sortHighestToLowest();
+        this.sortHighestToLowest();
         break;
       case 'alphabetical':
-        this.all = this.sortAlphabetically();
+        this.sortAlphabetically();
         break;
       case 'earliest':
-        this.all = this.earliestFirst();
+        this.earliestFirst();
         break;
       case 'latest':
-        this.all = this.latestFirst();
+        this.latestFirst();
         break;
     }
     this.renderAll()
